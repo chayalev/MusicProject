@@ -1,0 +1,50 @@
+.playlist-songs-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .song-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .song-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    cursor: pointer; /* סמן יד */
+    transition: background-color 0.3s ease;
+  }
+  
+  .song-item:hover {
+    background-color: rgba(220, 220, 220, 0.5); /* רקע אפור בהיר עם שקיפות של 50% */
+  }
+  
+  .songs-details {
+    display: flex;
+    align-items: center;
+  }
+  
+  .song-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  audio {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .song-item.playing {
+    background-color: rgba(0, 128, 0, 0.3); /* רקע ירוק בהיר עם שקיפות של 30% */
+    font-weight: bold;
+  }

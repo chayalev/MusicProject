@@ -1,0 +1,221 @@
+/* Layout.css
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar {
+  background-color: #333;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-item {
+  margin-right: 1rem;
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-link.active {
+  font-weight: bold;
+}
+
+.main-layout-content {
+  flex: 1;
+  padding: 1rem;
+} */
+/* ////////////////////////////////////////////////////// */
+/* .layout-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.navbar {
+  background-color: #333;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  margin: 0 1rem;
+}
+
+.navbar-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.navbar-link.active {
+  text-decoration: underline;
+}
+
+.profile-section {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.main-layout-content {
+  flex: 1;
+  padding: 1rem;
+}
+
+.profile-popup-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.profile-image
+{
+  height: 50px;
+  cursor: pointer;
+} */
+/* Layout.css */
+
+/* Reset default margin and padding for all elements */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Background color for the entire page */
+}
+
+/* Layout container styles */
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Navbar styles */
+.navbar {
+  /* background-color: #333; Dark background color */
+  background-color:#050624;
+  color: #fff; /* Light text color */
+}
+
+.navbar-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 60px; /* Adjust height as needed */
+  padding: 0 20px;
+}
+
+.navbar-item {
+  margin-right: 10px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #fff;
+  padding: 15px;
+  transition: background-color 0.3s;
+}
+
+.navbar-link:hover {
+  /* background-color: #555;  */
+  background-color:#050624;
+  /* Darker background color on hover */
+  
+}
+
+.profile-icon {
+  margin-left: auto; /* Align profile icon to the right */
+}
+
+.profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.site-logo
+{
+  height: 80px;
+  /* border-radius: 50%; */
+  cursor: pointer;
+}
+
+/* Main content area */
+.main-layout-content {
+  flex-grow: 1; /* Grow to fill remaining space */
+  padding: 20px;
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds viewport */
+}
+
+/* User details modal */
+.user-details {
+  text-align: right;
+}
+
+.user-details p {
+  margin: 10px 0;
+}
+
+.user-details button {
+  margin: 10px 5px;
+  padding: 8px 12px;
+  border: none;
+  background-color: #007bff; /* Bootstrap's primary color */
+  color: #fff;
+  cursor: pointer;
+}
+
+.user-details button:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .navbar-list {
+    flex-direction: column; /* Stack links vertically on smaller screens */
+    height: auto; /* Allow height to adjust as needed */
+  }
+
+  .navbar-item {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}
